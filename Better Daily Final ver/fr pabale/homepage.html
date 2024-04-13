@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body>
+    <header>
+        <h1>Your Website</h1>
+    </header>
+    <div class="container">
+        <!-- Top Half - Image Containers -->
+        <div class="image-container">
+            <img src="quotepix.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="exercisepix.jpg" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="ourstorypix.jpg" alt="Image 3">
+        </div>
+    </div>
+    <div class="container">
+        <!-- Bottom Left - E-Books -->
+        <div class="bottom-left">
+            <h2>Buy our handpicked e-books</h2>
+            <div class="image-container">
+                <img src="ebook1.jpg" alt="E-Book 1">
+            </div>
+            <div class="image-container">
+                <img src="ebook2.jpg" alt="E-Book 2">
+            </div>
+        </div>
+        <!-- Bottom Right - Podcasts -->
+        <div class="bottom-right">
+            <h2>Podcasts to listen to</h2>
+            <div class="podcast-topic">
+                <span>Procrastination:</span>
+                <a class="podcast-link" href="#">Podcast 1</a>
+                <a class="podcast-link" href="#">Podcast 2</a>
+            </div>
+            <div class="podcast-topic">
+                <span>Negativity:</span>
+                <a class="podcast-link" href="#">Podcast 3</a>
+                <a class="podcast-link" href="#">Podcast 4</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.bottom-left {
+    flex: 1;
+    padding: 20px;
+}
+
+.bottom-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.podcast-topic {
+    margin: 20px 0;
+}
+
+.podcast-link {
+    text-decoration: none;
+    color: #0074e3;
+    margin-right: 10px;
+}
